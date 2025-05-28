@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Properties</title>
+    <style>
+
+        .block p
+        {
+            height:200vh;
+            width:200vw;
+            background-color: blue;
+            display: block;
+            border: 2px solid black;
+            color: white;
+            border:10px solid goldenrod;
+            padding-top:5%;
+        }
+
+        .inline-block p
+        {
+            height:40px;
+            width:90px;
+            min-height: 80px;
+            min-width:20px;
+            background-color: green;
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding:14px;
+            margin: 5px;
+            font-size: 19px;
+        }
+
+        .inline p
+        {
+            background-color: darkslategrey;
+            color: whitesmoke;
+            padding:18px;
+            display:inline;
+            
+        }
+
+        .none p
+        {
+            height:50vh;
+            width:50vw;
+            background-color: bisque;
+            display: none;
+        }
+
+        .inline-block1 p
+        {
+             height:100dvh;
+             width: 50dvw;
+             background-color: chocolate;
+             display: inline-block;
+             color: white;
+        }
+
+        .block1 p
+        {
+            min-height: 30svh;
+            min-width: 10svw;
+            background-color: darkmagenta;
+            display: block;
+            color: white;
+        }
+        
+        .inline1 p
+        {
+            min-height: 30svh;
+            min-width: 10svw;
+            background-color:darkred;
+            display:inline;
+            color: white;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="block">
+        <p>I am block container</p>
+    </div>
+    <br>
+
+    <div class="block">
+        <p>I am block container</p>
+    </div>
+    <br>
+
+    <div class="inline-block">
+        <p>one</p>
+        <p>two</p>
+        <p>three</p>
+        <p>four</p>
+        <p>five</p>
+    </div>
+    <br>
+
+    <div class="inline-block">
+        <p>three</p>
+        <p>four</p>
+        <p>five</p>
+        <p>six</p>
+        <p>seven</p>
+    </div>
+    <br>
+
+    <div class="inline">
+        <p>this is a paragraph</p>
+        <p>of the lesson five.</p>
+    </div>
+
+    <div class="none">
+        <p>we are sisters</p>
+    </div>
+
+    <div class="inline-block1">
+        <p>hello world</p>
+    </div>
+
+    <div class="block1">
+        <p>nature looks beauty</p>
+    </div>
+
+    <div class="inline1">
+        <p>nature looks beauty</p>
+    </div>
+</body>
+</html>

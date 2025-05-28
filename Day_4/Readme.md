@@ -1,0 +1,1 @@
+## This project demonstrates various CSS `display` properties and how they affect the layout of HTML elements. It is part of a multi-day learning series focused on building web design skills with HTML and CSS.
