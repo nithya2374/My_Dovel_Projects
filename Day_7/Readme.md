@@ -1,0 +1,1 @@
+## Cloned the Full Stack folder containing 7 day-wise subfolders and pushed the updates to GitHub. Completed a custom CSS Grid task to practice responsive layout design.
