@@ -1,0 +1,50 @@
+1. what is description list?
+    
+    A description list in HTML is used to represent terms and their descriptions, like in glossaries,FAQS or resumes.
+    Elements of a Description List:
+      <dl>- the description list container.
+      <dt>- a term
+      <dd>-the description or definition of that term.
+
+    Example:
+       <dl>
+         <dt><strong>Unit Director</strong></dt>
+         <dd>Rover games,April 2019-Present</dd>
+
+         <dt><strong>Internal Project Manager</strong></dt>
+         <dd>Tesla,April 2012-March 2014</dd>
+       </dl>
+
+2. Another semantic tag for delete tag
+
+      there is no another semantic tag for delete but have,
+
+      <s>- strikethrough(stylistic, not semantic) for text thats no longer accurate or relevant.
+      Example:
+        <p><s>$100</s> $75 </p>
+        output:
+          * $100 is shown with a strikethrough(crossed out)
+          * $75 is shown normally,inidicating the new or discounted price.
+
+
+      <ins>- semantic tag for inserted text (shows underline) and to inidicate newly added text.
+      Example:
+        <p><ins>New feature added</ins></p>
+        output:
+            New feature added(with an underline)
+            * underline shows an newly inserted or added.
+            * semantic opposite of <del>
+
+3. what is semantic tag and its purpose.
+     
+     semantic tags in HTML are tags that clearly describe their meaning and role 
+     in the structure  of a webpage.they help both brosers and developers understand the content better.
+    
+    common semantic tags:
+      <header> - defines the top section
+      <nav>    - Contains navigatio links
+      <main>   - main content area
+      <section> - Groups related content
+      <summary> - summary heading for <details>
+      <del> - Deleted content
+      <ins> - inserted content
