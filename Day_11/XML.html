@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>AJAX Multiple Users XML </title>
+  <style>
+    body 
+    {
+      font-family: Arial, sans-serif;
+      background-color: #f0f2f5;
+      padding: 40px;
+      text-align: center;
+    }
+
+    h2 
+    {
+      color: #333;
+      margin-bottom: 30px;
+    }
+
+    #infoList 
+    {
+      list-style-type: none;
+      padding: 0;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    #infoList li 
+    {
+      background-color: #ffffff;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 15px;
+      margin-bottom: 15px;
+      text-align: left;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    strong 
+    {
+      color: black;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>User Information</h2>
+  <ul id="infoList"></ul>
+
+  <script>
+
+    const xhr = new XMLHttpRequest();
+    xhr.open('GET', 'users.xml', true); 
+
+    xhr.onload = function () 
+    {
+      if (xhr.status === 200) 
+      {
+        const xml = xhr.responseXML;
+        const users = xml.getElementsByTagName('user');
+        let output = '';
+
+        for (let i = 0; i < users.length; i++) 
+        {
+          const firstName = users[i].getElementsByTagName('firstName')[0].textContent;
+          const lastName = users[i].getElementsByTagName('lastName')[0].textContent;
+          const city = users[i].getElementsByTagName('city')[0].textContent;
+          const state = users[i].getElementsByTagName('state')[0].textContent;
+
+          output += `
+            <li>
+              <strong>Name:</strong> ${firstName} ${lastName}<br>
+              <strong>City:</strong> ${city}<br>
+              <strong>State:</strong> ${state}
+            </li><br>
+          `;
+        }
+
+        document.getElementById('infoList').innerHTML = output;
+      } 
+      else 
+      {
+        console.error('Failed to fetch XML data.');
+      }
+
+    };
+
+    xhr.onerror = function () 
+    {
+      console.error('Network error occurred.');
+    };
+
+    xhr.send();
+  </script>
+
+</body>
+</html>

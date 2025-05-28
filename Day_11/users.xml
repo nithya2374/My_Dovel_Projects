@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<users>
+  <user>
+    <firstName>Divya</firstName>
+    <lastName>Dharshini</lastName>
+    <city>Chennai</city>
+    <state>TamilNadu</state>
+  </user>
+  <user>
+    <firstName>John</firstName>
+    <lastName>Doe</lastName>
+    <city>Bangalore</city>
+    <state>Karnataka</state>
+  </user>
+  <user>
+    <firstName>Shreya</firstName>
+    <lastName>Das</lastName>
+    <city>Bangalore</city>
+    <state>Karnataka</state>
+  </user>
+  <user>
+    <firstName>Vasu</firstName>
+    <lastName>Menon</lastName>
+    <city>Cochin</city>
+    <state>Kerala</state>
+  </user>
+  <user>
+    <firstName>Dheja</firstName>
+    <lastName>Mohan</lastName>
+    <city>Pune</city>
+    <state>Mumbai</state>
+  </user>
+  <user>
+    <firstName>Sowmiya</firstName>
+    <lastName>Karan</lastName>
+    <city>Kolkata</city>
+    <state>West Bengal</state>
+  </user>
+</users>
