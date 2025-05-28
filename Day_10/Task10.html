@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design</title>
+    <style>
+
+      body
+      {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f0f0f0;
+      }
+
+      h1
+      {
+      text-align: center;
+      color:black;
+      animation: slideIn 1s ease-out;
+      }
+
+     .container 
+      {
+      display: flex;
+      justify-content: center;
+      gap: 35px;
+      flex-wrap: wrap;
+      padding: 20px;
+      }
+
+     .card 
+     {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      width: 300px;
+      transition: transform 0.3s ease, background-color 0.5s ease;
+     }
+
+    .card:hover 
+    {
+      transform: scale(1.15);
+      background-color: #e0f7fa;
+      
+    }
+
+    .card img 
+    {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    button 
+    {
+      padding: 10px 15px;
+      border: 2px solid darkolivegreen;
+      background-color:darkolivegreen;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover 
+    {
+      background-color: olivedrab;
+      border: 2px solid olivedrab;
+      
+    }
+
+    /* Animation for heading */
+    @keyframes slideIn {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Media Queries for Responsive Design */
+    @media (max-width: 768px) 
+    {
+      .container 
+      {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .card 
+      {
+        width: 90%;
+      }
+    }
+
+    @media (max-width: 400px) 
+    {
+      h1 
+      {
+        font-size: 1.5rem;
+      }
+
+      button 
+      {
+        width: 100%;
+      }
+    }
+
+    </style>
+</head>
+
+<body>
+
+     <h1>Responsive Design</h1>
+  
+
+    <div class="container">
+
+       <div class="card" id="card1">
+         <img src="https://picsum.photos/300x200" alt="Card 1 Image" />
+         <h2>Card 1</h2>
+         <p>This is a sample description for Card 1.</p>
+         <button onclick="changeColor('card1')">Change Color</button>
+      </div>
+
+      <div class="card" id="card2">
+        <img src="https://picsum.photos/300x200" alt="Card 2 Image" />
+        <h2>Card 2</h2>
+        <p>This is a sample description for Card 2.</p>
+        <button onclick="changeColor('card2')">Change Color</button>
+      </div>
+
+    </div>
+    
+    <script>
+      // JavaScript function to change card background color
+      function changeColor(cardId) 
+      {
+        // Get the element by ID and change the background color
+        let card = document.querySelector('#' + cardId)
+        card.style.backgroundColor = card.style.backgroundColor == 'lightblue' ? 'white' : 'lightblue'
+      }
+      
+    </script>
+
+</body>
+</html>

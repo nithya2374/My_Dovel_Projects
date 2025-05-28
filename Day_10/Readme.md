@@ -1,0 +1,1 @@
+## This project showcases advanced CSS techniques like Media Queries, Transforms, and Animations, along with JavaScript features including Event Listeners, Form Validation, and API Fetching (Time and Weather APIs).  It provides an interactive front-end experience with responsive design and dynamic data rendering using external APIs.
