@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>jQuery Methods Demo</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+
+    .box 
+    {
+      width: 200px;
+      height: 100px;
+      background-color: lightblue;
+      margin: 10px 0;
+      text-align: center;
+      line-height: 100px;
+    }
+
+    .highlight 
+    {
+      background-color: yellow;
+      font-weight: bold;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <h2>jQuery Methods Demo</h2>
+
+  <button id="btnHide">Hide</button>
+  <button id="btnShow">Show</button>
+  <button id="btnToggle">Toggle</button>
+  <button id="btnFade">Fade Out</button>
+  <button id="btnSlide">Slide Up</button>
+  <button id="btnClass">Add Class</button>
+  <button id="btnCSS">Change Color</button>
+  <button id="btnText">Change Text</button>
+
+  <div id="myBox" class="box">Hello jQuery!</div>
+
+  <script>
+    $(document).ready(function() 
+    {
+      $("#btnHide").click(function() 
+      {
+        $("#myBox").hide();
+      });
+
+      $("#btnShow").click(function() 
+      {
+        $("#myBox").show();
+      });
+
+      $("#btnToggle").click(function() 
+      {
+        $("#myBox").toggle();
+      });
+
+      $("#btnFade").click(function() 
+      {
+        $("#myBox").fadeOut().fadeIn();
+      });
+
+      $("#btnSlide").click(function() 
+      {
+        $("#myBox").slideUp().slideDown();
+      });
+
+      $("#btnClass").click(function() 
+      {
+        $("#myBox").toggleClass("highlight");
+      });
+
+      $("#btnCSS").click(function() 
+      {
+        $("#myBox").css("background-color", "lightgreen");
+      });
+
+      $("#btnText").click(function() 
+      {
+        $("#myBox").text("Text Changed!");
+      });
+
+      // Bonus: Hover Event
+      $("#myBox").hover
+      (
+        function() 
+        {
+          $(this).css("background-color", "orange");
+        },
+        function() 
+        {
+          $(this).css("background-color", "lightblue");
+        }
+      );
+    });
+    
+  </script>
+
+</body>
+</html>
