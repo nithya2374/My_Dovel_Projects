@@ -1,0 +1,1 @@
+## This project demonstrates various JavaScript DOM functions like `insertAdjacentElement`, `getBoundingClientRect`, and scrolling methods.  Open the HTML file in a browser and check the console to see the output of each DOM operation.

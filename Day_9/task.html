@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript functions</title>
+</head>
+
+<style>
+    .client
+    {
+        width:100px;
+        height:100px;
+        padding:10px; 
+        border:5px solid black;
+    }
+</style>
+
+<body>
+
+    <!--InsertadjacentElement-->
+    <div id="reference" class="ref">Reference Element</div>
+    <script>
+       const newDiv = document.createElement('div');
+       newDiv.textContent = "Inserted Element";
+       document.getElementById('reference').insertAdjacentElement('afterend', newDiv);
+    </script>
+
+    <!---InsertAdjacentHTML-->
+    <div id="container">Start</div>
+    <script>
+       const html = "<p><b>This is bold HTML text</b></p>";
+       document.getElementById('container').insertAdjacentHTML('beforeend', html);
+    </script>
+
+    <!---InsertAdjacentText-->
+    <div id="textContainer">Hello</div>
+    <script>
+         document.getElementById('textContainer').insertAdjacentText('beforeend', " World!");
+    </script>
+
+    <!--client and offset properties-->
+    <div id="box" class="client">Box</div>
+    <script>
+        const box = document.getElementById('box');
+        console.log("clientWidth:", box.clientWidth);    // 100
+        console.log("offsetWidth:", box.offsetWidth);    // 130 (100 + padding + border)
+        console.log("clientTop (border):", box.clientTop); 
+    </script>
+
+    <!---getboundingclientRect()-->
+    <div id="rectBox" style="margin-top:50px;">Rect Box</div>
+    <script>
+       const rect = document.getElementById('rectBox').getBoundingClientRect();
+       console.log("Top:", rect.top, "Left:", rect.left, "Width:", rect.width, "Height:", rect.height);
+    </script>
+
+
+    <!---scrolltop,scrollheight,scrollleft-->
+    <div id="scrollBox" style="width:200px; height:100px; overflow:auto; border:1px solid black;">
+        <div style="height:300px;">Scroll inside me</div>
+    </div>
+    <script>
+       const scroll = document.getElementById('scrollBox');
+       scroll.scrollTop = 50;  // Scroll down by 50px
+       console.log("Scroll Height:", scroll.scrollHeight);
+    </script>
+
+    <!---scrollintoview----->
+    <div style="height:500px;"></div> <!-- Spacer -->
+    <div id="target" style="height:50px; background:lightgreen;">Scroll to me</div>
+    <script>
+        document.getElementById('target').scrollIntoView({ behavior:"instant" });
+    </script>
+
+    <!--scrollTo-->
+    <button onclick="window.scrollTo({ top: 300, behavior: 'smooth' })">Scroll Up</button>
+    <div style="height:1000px;"></div>
+
+
+</body>
+</html>
