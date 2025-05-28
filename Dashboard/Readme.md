@@ -1,0 +1,1 @@
+## this project showcases a dashboard by using grid with css techniques like Media query, animations and transforms along with the javascript features like dragging and resizable of items of two rows and columns.it provides a interactive responsive design layout page using html and styled with css.
