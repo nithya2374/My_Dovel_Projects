@@ -1,0 +1,1 @@
+## This project is a responsive landing page. It features a clean layout with a top container, bottom container, and fixed action icons for chat, notifications, and contact.
