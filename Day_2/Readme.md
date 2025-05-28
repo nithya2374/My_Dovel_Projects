@@ -1,0 +1,1 @@
+## This project is a personal resume webpage built using HTML and styled with CSS. It also includes an embedded video for enhanced interactivity or multimedia presentation.
