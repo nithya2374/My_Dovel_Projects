@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>User Registration Form</title>
+  <style>
+    body 
+    {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    form 
+    {
+      padding: 40px;
+      border: 2px solid #ccc;
+      width: 400px;
+      background:#ccc;
+      margin-left:380px;
+    }
+
+    h2
+    {
+        text-align: center;
+    }
+
+    label 
+    {
+      display: block;
+      margin-top: 10px;
+    }
+
+    input, textarea 
+    {
+      width: 100%;
+      padding: 5px;
+      margin-top: 5px;
+      border-radius: 10px;
+      border:1px solid whitesmoke;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <h2>User Registration Form</h2>
+  <form>
+    <label>First Name:
+      <input type="text" name="firstname" required>
+    </label>
+
+    <label>Email:
+      <input type="email" name="email" required>
+    </label>
+
+    <label>Age:
+      <input type="number" name="age" required>
+    </label>
+
+    <label>Gender:
+       <input type="radio" name="gender" value="male" required> Male
+       <input type="radio" name="gender" value="female"> Female
+    </label>
+
+    <label>Subscribe to Newsletter:
+      <input type="checkbox" name="newsletter" checked>
+    </label>
+
+    <label>Bio:
+      <textarea name="bio" rows="3" required>This is readonly</textarea>
+    </label>
+
+    <label>Readonly Example:
+      <input type="text" value="Cannot edit this" readonly>
+    </label>
+
+    <br><br>
+    <input style="background-color: darkslateblue; cursor: pointer; border:1px solid darkslateblue; color:white;"  type="submit" value="Submit">
+  </form>
+
+</body>
+</html>

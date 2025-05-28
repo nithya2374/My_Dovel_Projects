@@ -1,0 +1,1 @@
+## This project demonstrates basic form handling and table creation using pure HTML. It is part of a multi-day learning and development project focused on web development fundamentals.
