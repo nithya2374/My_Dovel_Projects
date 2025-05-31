@@ -1,0 +1,69 @@
+1. Server Side Rendering(SSR):
+
+    *  Rendering HTML on the server before sending it to the browser.
+
+    *  Use: Improves SEO and initial load speed.
+
+Example: Using Next.js with a Node.js backend to render React components on the server.
+    * Pros: SEO-friendly, fast initial load.
+    * Cons: Higher server load.
+
+
+
+
+2. Client-Side Rendering(CSR):
+     
+   * Rendering happens in the browser using JavaScript. The server sends a minimal HTML page.
+
+   * Use: Popular in SPAs like React apps created with Create React App (CRA).
+
+Example: A React app fetching data from a Node/Express API and rendering UI in the browser.
+    * Pros: Rich interactivity, fast after initial load.
+    * Cons: Not SEO-friendly by default.
+
+
+
+3.Single-Page Application(SPA):
+      
+    * A web application that loads a single HTML page and updates dynamically without refreshing.
+
+    *  Use: Improves user experience by avoiding full page reloads.
+
+Example (MERN): A React + Express + MongoDB-based app where navigation (e.g., /dashboard, /profile) doesn’t reload the page.
+    * Pros: Smooth user experience.
+    * Cons: SEO challenges, longer initial load.
+
+
+
+4. SQL VS NOSQL:
+     
+          Features	                SQL (Relational DB)	                NoSQL (Non-relational DB)
+
+   1.      Structure	            Tables with rows & columns           Collections with documents
+
+   2.       Schema	                   Fixed schema	                        Dynamic schema
+
+   3.   Query Language	                   SQL	                        JSON-like queries (MongoDB)
+
+   4.     Example	                  MySQL, PostgreSQL	                MongoDB (used in MERN stack)
+
+   5.     Use Case	              Structured data, complex joins	   Unstructured data, scalability
+
+
+
+5.History API:
+
+      * Helps change the URL in a SPA without reloading the page.
+
+      * Used in React Router for navigation.
+
+ Example in React:
+
+navigate("/profile"); // moves to profile page
+* Pros: Works like real page links
+* Cons: Needs backend to handle page refresh
+
+
+
+
+
