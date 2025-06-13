@@ -4,6 +4,6 @@ import react from '@vitejs/plugin-react'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/Full_Stack_Dovel/',
+  base: '/Full_Stack_Dovel/Day_21/',
 
 })
