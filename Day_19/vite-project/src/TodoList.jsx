@@ -22,11 +22,11 @@ const TodoList = () => {
         boxShadow: '0 4px 10px rgba(0, 0, 0, 0.1)',
       }}
     >
-      <h2 style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+      <h2 style={{ display: 'flex', color: 'black' , alignItems:'center', gap:'10px' }}>
         📝 <span>Todo List</span>
       </h2>
 
-      <div style={{ display: 'flex', gap: '10px', margin: '10px 0' }}>
+      <div style={{ display: 'flex',color: 'black', gap: '10px', margin: '10px 0' }}>
         <input
           type="text"
           value={input}
@@ -39,7 +39,7 @@ const TodoList = () => {
         </button>
       </div>
 
-      <ul style={{ paddingLeft: '20px' }}>
+      <ul style={{ paddingLeft: '20px' ,color: 'black'}}>
         {todos.map((todo, i) => (
           <li key={i}>{todo}</li>
         ))}
