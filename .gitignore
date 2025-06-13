@@ -1,4 +1,6 @@
-**/node_modules/
-**/dist/
-**/vite-project/
-**/my-context-router-app/
+node_modules/
+Day_19/
+Day_20/
+Day_21/
+Day_22/
+Day_23/
